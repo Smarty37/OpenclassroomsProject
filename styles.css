@@ -1,0 +1,12 @@
+#conteneur
+{
+	display:  flex;
+	justify-content: space-between;
+
+}
+
+.element
+{
+	display: flex;
+	justify-content: space-between;
+}
