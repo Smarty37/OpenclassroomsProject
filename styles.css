@@ -1,6 +1,9 @@
+body{
+	font-family: Raleway;
+}
 @font-face{
 	font-family: "Raleway";
-	src: url("Raleway-Italic-VariableFont_wght.ttf");
+	src: url("Raleway/static/Raleway-ExtraBold.ttf");
 }
 
 h2{
@@ -11,7 +14,7 @@ h3{
 	font-size: x-large;
 }
 
-label= economique:hover {
+ economique:hover {
 	text-decoration: underline;
 	color: yellow;
 }
@@ -19,11 +22,15 @@ label= economique:hover {
 #conteneur{
 	display:  flex;
 	justify-content: space-evenly;
-	background color: #F2F2F2;
+	
 
 }
 
-.element
+nav
 {
-
+	display: flex;
 }
+ footer{
+ 		background-color: #F2F2F2;
+
+ }
