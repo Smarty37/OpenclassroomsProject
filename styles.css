@@ -1,22 +1,29 @@
-h1
-{
-	font-size: medium;
+@font-face{
+	font-family: "Raleway";
+	src: url("Raleway-Italic-VariableFont_wght.ttf");
 }
 
-h2
-{
-	font-size: x-small;
+h2{
+	font-size: medium ;
 }
 
-#conteneur
-{
+h3{
+	font-size: x-large;
+}
+
+label= economique:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+
+#conteneur{
 	display:  flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	background color: #F2F2F2;
 
 }
 
 .element
 {
-	display: flex;
-	justify-content: space-between;
+
 }
