@@ -1,125 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="France">
 <head>
+	<meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/54bd6d5e47.js" crossorigin="anonymous"></script>
 	<title>Reservia</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<div id="corps">
 
-	<!-- Header -->
-	<header>
-		<img src= "images/logo/Reservia.svg">
-		<nav>
-			<ul>
-				<li><a href="">Hébergements</a></li>
-				<li><a href="">Activités</a></li>
-				<li><a href="">S'inscrire</a></li>
-			</ul>
-		</nav>
-	</header>
+				<!-- Header -->
+				<header>
 
-	<!-- Section 1 -->
-	<section id="recherche">
-		
-		<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-		
-		<h3>En plein centre ville ou en pleine nature</h3>
-			
-			<form method="post">
-				<p>
-					<label for="destination">Votre destination</label>
-					<input type="text" id="destination" placeholder="Marseille,France" />
-					<input type="submit" />
-				</p>
-			</form>
-			
-	</section>
+					<nav>
+							<div id="logo"><img src= "images/logo/Reservia.svg"></div>
+							<div><a href="">Hébergements</a></div>
+							<div><a href="">Activités</a></div>
+							<div><a href="">S'inscrire</a></div>
+						
+					</nav>
+				</header>
 
-	<!-- Section 2 -->
-	<section id="filtres">
+				<!-- Section 1 -->
+				<section id="recherche">
+					
+					<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+					
+					<div id="complements">En plein centre ville ou en pleine nature</div>
+						
+						<form method="post">
+							<p>
+								<i class="fas fa-map-marker-alt"></i>
+								<input type="text" id="destination" placeholder="Marseille,France" />
+								<input type="submit" />
+							</p>
+						</form>
+						
+				</section>
 
-		<form>
-			<p>
-				<h2>Filtres</h2>
-				
-				<input type="checkbox" id="economique">
-				<label for="economique">Economique</label>
-				
-				<input type="checkbox" id="familial">
-				<label for="familial">Familial</label>
-				
-				<input type="checkbox" id="romantique">
-				<label for="romantique">Romantique</label>
-				
-				<input type="checkbox" id="animaux">
-				<label for="animaux">Animaux autorisés</label>
+				<!-- Section 2 -->
+				<section id="filtres">
 
-			</p>
-		</form>
+						<div id="parametre">
+							Filtres
+							
+							<div id="economique"><a href="">Economique</a></div>
+							
+							<div id="familial"><a href="">Familial</a></div>
+							<i class="fa-solid fa-heart"></i>
+							<div id="romantique"><a href="">Romantique</a></div>
+							
+							<div id="animaux"><a href="">Animaux autorisés</a></div>
+						</div>
+							
+					<br/>
 
-	<h3>Plus de 500 logements sont disponibles dans cette ville</h3>
+				<div id="complements">Plus de 500 logements sont disponibles dans cette ville</div>
 
 
-		
-	</section>
+					
+				</section>
 
-	<!-- Section 3 -->
-	<section id="hebergements">
-		
-		<h1>Hébergements à Marseille</h1>
+				<!-- Section 3 -->
+				<section id="hebergements">
+					
+					<h1>Hébergements à Marseille</h1>
 
-	</section>
+				</section>
 
-	<!-- Section 4 -->
-	<section id="populaire">
-		
-		<h1>Les plus populaires</h1>
+				<!-- Section 4 -->
+				<section id="populaire">
+					
+					<h1>Les plus populaires</h1>
 
-	</section>
+				</section>
 
-	<!-- Section 5 -->
-	<section id="vieux_port">
-		
-		<h1>Activités à Marseille</h1>
+				<!-- Section 5 -->
+				<section id="vieux_port">
+					
+					<h1>Activités à Marseille</h1>
 
-	</section>
+				</section>
 
-	<!-- Section 6 -->
-	<section id="fort">
-		
-	</section>
+				<!-- Section 6 -->
+				<section id="fort">
+					
+				</section>
 
-	<!-- Section 7 -->
-	<section id="parc">
-		
-	</section>
+				<!-- Section 7 -->
+				<section id="parc">
+					
+				</section>
 
-	<!-- Section 8 -->
-	<section id="notre_dame">
-		
-	</section>
-
+				<!-- Section 8 -->
+				<section id="notre_dame">
+					
+				</section>
+	</div>
 	<!-- Footer -->
 	<footer>
 		<div id="conteneur">
 			<div class="element 1">
-				<h3>A propos</h3><br/>
-					<h2>Fonctionnement du site</h2>
-					<h2>Conditions générales de ventes</h2>
-					<h2>Données et confidentialité</h2>
+				<div id="info">A propos<br/><br/></div>
+					Fonctionnement du site<br/><br/>
+
+						Conditions générales de ventes<br/><br/>
+
+						Données et confidentialité<br/>	<br/>				
+					
+
+			</div>
+			<div class="element 2">	
+				<div id="info">Nos hébergements<br/><br/></div>
+					Charte qualitée<br/><br/>
+
+					Soumettre votre hôtel<br/><br/>
+					
 			</div>
 
-			<div class="element 2">	
-				<h3>Nos hébergements</h3><br/>
-					<h2>Charte qualité</h2>
-					<h2>Soumettre votre hôtel</h2>
-			</div>
 
 			<div class="element 3">
-				<h3>Assistance</h3><br/>
-					<h2>Centre d'aide</h2>
-					<h2>Nous contacter</h2>
+				<div id="info">Assistance<br/><br/></div>
+					Centre d'aide<br/><br/>
+
+					Nous contacter<br/><br/>
+					
 			</div>
 		</div>	
 	</footer>

@@ -6,31 +6,60 @@ body{
 	src: url("Raleway/static/Raleway-ExtraBold.ttf");
 }
 
-h2{
+#complements{
 	font-size: medium ;
+	
 }
 
-h3{
-	font-size: x-large;
+#corps{
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
- economique:hover {
-	text-decoration: underline;
+#logo{
+	width: 70%;
+}
+#parametre{
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+}
+
+ #economique:hover {
+	text-decoration: none;
 	color: yellow;
+}
+
+#familial{
+
+}
+
+#romantique{
+
+}
+
+#animaux{
+
 }
 
 #conteneur{
 	display:  flex;
 	justify-content: space-evenly;
 	
-
 }
 
 nav
 {
 	display: flex;
+	justify-content: space-between;
+	
 }
+ 
  footer{
  		background-color: #F2F2F2;
 
  }
+
+#info {
+	font-size: x-large;
+}
