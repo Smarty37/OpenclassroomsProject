@@ -3,12 +3,7 @@ body{
 }
 @font-face{
 	font-family: "Raleway";
-	src: url("Raleway/static/Raleway-ExtraBold.ttf");
-}
-
-#complements{
-	font-size: medium ;
-	
+	src: url("police/Raleway-ExtraBold.ttf");
 }
 
 #corps{
@@ -16,42 +11,74 @@ body{
 	margin-left: 5%;
 }
 
+#complements{
+	font-size: medium ;
+	color: grey;
+}
+
+nav{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
 #logo{
 	width: 70%;
 }
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#inscription{
+	color: #0065FC;
+}
+
+#recherche{
+	display: flex;
+	justify-content: flex-start;
+}
+
+#gps{
+	display: flex;
+}
+
+#marker{
+	background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+}
+
 #parametre{
 	display: flex;
 	justify-content: space-evenly;
-	width: 80%;
+	width: 50%;
 }
 
- #economique:hover {
+ #les_filtres:hover {
 	text-decoration: none;
 	color: yellow;
 }
 
-#familial{
-
+#petit_texte{
+	display: flex;
 }
 
-#romantique{
-
+#location{
+	display: flex;
 }
 
-#animaux{
-
+#cannebiere{
+	display: flex;
+	height: 100px;
+	width: 15%;
+	
 }
 
 #conteneur{
 	display:  flex;
 	justify-content: space-evenly;
-	
-}
-
-nav
-{
-	display: flex;
-	justify-content: space-between;
 	
 }
  
