@@ -3,7 +3,7 @@ body{
 }
 @font-face{
 	font-family: "Raleway";
-	src: url("police/Raleway-ExtraBold.ttf");
+	src: url("police/Raleway-Italic-VariableFont_wght.ttf");
 }
 
 #corps{
@@ -16,11 +16,16 @@ body{
 	color: grey;
 }
 
+
+/* barre de navigation */
 nav{
 	display: flex;
 	justify-content: space-evenly;
 }
-
+nav div a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
 
 #logo{
 	width: 70%;
@@ -35,20 +40,46 @@ a{
 	color: #0065FC;
 }
 
+
+/* barre de recherche */
+
 #recherche{
 	display: flex;
 	justify-content: flex-start;
-}
-
-#gps{
-	display: flex;
 }
 
 #marker{
 	background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.7em;
 }
+
+#destination{
+	border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.search{
+    background-color: #0065FC;
+    border: none;
+    padding-right: 1em ;
+    padding-left: 1em ;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/*Filtres*/
+
 
 #parametre{
 	display: flex;
@@ -89,4 +120,5 @@ a{
 
 #info {
 	font-size: x-large;
+
 }
