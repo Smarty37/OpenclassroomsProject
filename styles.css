@@ -22,9 +22,15 @@ nav{
 	display: flex;
 	justify-content: space-evenly;
 }
+
+nav div{
+    padding-top: 40px;
+}
+
 nav a{
     padding: 40px 30px 0;
 }
+
 nav div a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
