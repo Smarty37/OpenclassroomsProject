@@ -147,7 +147,7 @@ a{
 
 #location{
     flex: 2;
-    
+        
 }
 
 #location, #populaires{
@@ -167,7 +167,7 @@ a{
 #choix{
 	background-color: white;
 	display: grid;
-    height: 210px;
+    height: 220px;
     grid-template-rows: 65%;
     box-sizing: border-box;
     border: 5px solid #fff;
@@ -213,6 +213,7 @@ a{
 #populaires{
     flex: 1;
     margin-left: 3%;
+
    
 }
 
@@ -221,9 +222,11 @@ a{
     align-items: baseline;
 }
 
+
+
 #choix_populaire{
-	background-color: white;
-	height: 145px;
+    display: flex;
+    background-color: white;
     border: 5px solid #fff;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -233,18 +236,103 @@ a{
 }
 
 #images_populaire img{
-	 width: 40%;
-    height: 100%;
+	 width: 200px;
+    height: 145px;
     object-fit: cover;
 }
 
 #description_populaire{
-	flex: 1;
-    background-color: #fff;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between ;
+    background-color: #fff;
     padding: 10px;
 }
+
+/*Activitées*/
+#Activités{
+    width: 100%;
+    display: flex;
+    height: 60vh;
+    flex-flow:column wrap;
+    align-content: space-between;
+    justify-content: flex-end;
+    margin-bottom: 4vh;
+}
+#titre_activités{
+    margin-bottom: 2vh;
+}
+
+.abc{
+    width: 20vw ;
+    max-width: 300px;
+    background-size: cover;
+    border-radius: 1rem;
+    position: relative;
+
+    box-shadow: 0px 1px 10px 1px #c9c9c9;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.vieux_port{
+    background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) ;
+    background-position: -170px 0px;
+}
+
+.blk-tall{
+    height: 50vh;
+}
+
+.pomegues{
+    background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) ;
+    background-position: 0px -100px;
+}
+
+.blk-pomegues{
+    height: 18vh;
+    margin-bottom: 4vh;
+}
+
+.frioul{
+    background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-position: 0px -100px;
+}
+
+.blk-frioul{
+    height: 28vh;
+}
+
+.calanques{
+    background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) ;
+    background-position: -170px 0px;
+}
+
+.notredame{
+    background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
+    background-position: 0px -100px;
+}
+
+.longchamps{
+    background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) ;
+    background-position: 0px -100px;
+}
+
+.description_activités{
+    position: absolute;
+    width: 90%;
+    background-color: white;
+    bottom: 0px;
+    border-radius: 0 0 1rem 1rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    line-height: 3.4rem;
+
+    
+}
+
 /*Footer*/
 
 #conteneur{
@@ -255,10 +343,16 @@ a{
  
  footer{
  		background-color: #F2F2F2;
+}
 
- }
-
-#info {
+footer li{
+    margin-bottom: 15px;
+}
+footer a:hover{
+    font-weight: 600;
+    color: #0065FC;
+}
+.info {
 	font-size: x-large;
 
 }
