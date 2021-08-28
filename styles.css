@@ -3,28 +3,35 @@ body{
 }
 @font-face{
 	font-family: "Raleway";
-	src: url("police/Raleway-Italic-VariableFont_wght.ttf");
+	src: url("police/Raleway-VariableFont_wght.ttf");
 }
 
 #corps{
-	margin-right: 5%;
-	margin-left: 5%;
+	margin-right: 10%;
+	margin-left: 10%;
 }
-
+#complements_haut{
+        font-size: medium ;
+        color: grey;
+        font-weight: bold;
+        margin-bottom: 20px;
+}
 #complements{
-	font-size: medium ;
-	color: grey;
+	 font-size: medium ;
+        color: grey;
+        font-weight: bold;
 }
 
 
 /* barre de navigation */
 nav{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 nav div{
     padding-top: 40px;
+    font-weight: bold;
 }
 
 nav a{
@@ -89,14 +96,25 @@ a{
 }
 
 /*Filtres*/
-
-
+#filtres{
+    margin-top: 10px;
+}
+#titre_filtres{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
 
 #liste_filtres{
 	display: flex;
 	justify-content: space-evenly;
 	width: 50%;
 	flex-wrap: wrap;
+}
+
+.categorie{
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 #les_filtres{
@@ -135,6 +153,9 @@ a{
 
 #petit_texte{
 	display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 
@@ -157,6 +178,11 @@ a{
 	
 }
 
+#texte_hebergement{
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
 #espace_hebergement{
 	display: grid;
 	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -164,7 +190,7 @@ a{
     margin: 30px 0 50px;
 }
 
-#choix{
+.choix{
 	background-color: white;
 	display: grid;
     height: 220px;
@@ -176,8 +202,16 @@ a{
     box-shadow: 0 0 7px #c1c1c1;
     
 }
-	
-#images_hebergement img{
+
+.description_hebergement{
+    margin-left: 15px;
+}
+
+.nom{
+    font-weight: bolder;
+}	
+
+.images_hebergement img{
 	width: 100%;
 	height: 126px;
 	object-fit: cover;
@@ -187,7 +221,7 @@ a{
 	text-decoration: bold;
 }
 
-#notation{
+.notation{
     word-spacing: -1ch;
 }
 
@@ -205,7 +239,7 @@ a{
 }
 
 #afficher_plus a{
-	text-decoration: bold;
+	font-weight: bold;
 }
 
 /*Populaire*/
@@ -213,18 +247,19 @@ a{
 #populaires{
     flex: 1;
     margin-left: 3%;
-
-   
 }
 
+#tete_populaire i{
+    margin-left: 80%;
+}
 #tete_populaire{
+    font-weight: bold;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 20px;
 }
 
-
-
-#choix_populaire{
+.choix_populaire{
     display: flex;
     background-color: white;
     border: 5px solid #fff;
@@ -233,22 +268,26 @@ a{
     box-shadow: 0 0 7px #c1c1c1;
     box-sizing: border-box;
     overflow: hidden;
+    width: 50%;
+
 }
 
-#images_populaire img{
+.images_populaire img{
 	 width: 200px;
-    height: 145px;
+    height: 125px;
     object-fit: cover;
 }
 
-#description_populaire{
+.description_populaire{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between ;
     background-color: #fff;
     padding: 10px;
+    margin-left: 15px;
 }
+
 
 /*Activitées*/
 #Activités{
@@ -265,8 +304,8 @@ a{
 }
 
 .abc{
-    width: 20vw ;
-    max-width: 300px;
+    width: 25vw ;
+    max-width: 370px;
     background-size: cover;
     border-radius: 1rem;
     position: relative;
@@ -292,7 +331,7 @@ a{
 }
 
 .blk-pomegues{
-    height: 18vh;
+    height: 28vh;
     margin-bottom: 4vh;
 }
 
@@ -302,7 +341,7 @@ a{
 }
 
 .blk-frioul{
-    height: 28vh;
+    height: 18vh;
 }
 
 .calanques{
@@ -322,14 +361,14 @@ a{
 
 .description_activités{
     position: absolute;
-    width: 90%;
+    width: 100%;
     background-color: white;
     bottom: 0px;
     border-radius: 0 0 1rem 1rem;
     padding-left: 2rem;
     font-size: 1rem;
-    line-height: 3.4rem;
-
+    line-height: 2rem;
+    font-weight: bold;
     
 }
 
@@ -337,22 +376,28 @@ a{
 
 #conteneur{
 	display:  flex;
-	justify-content: space-evenly;
-	
+	justify-content:space-evenly;
 }
  
  footer{
  		background-color: #F2F2F2;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-left: -40%;
+
 }
 
 footer li{
     margin-bottom: 15px;
+    list-style: none;
 }
 footer a:hover{
     font-weight: 600;
     color: #0065FC;
 }
 .info {
+    margin-left: 40px;
 	font-size: x-large;
+    font-weight: bold;
 
 }
