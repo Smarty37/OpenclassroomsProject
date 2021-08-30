@@ -59,7 +59,9 @@ a{
 
 
 /* barre de recherche */
-
+::placeholder{
+    color: black;
+}
 #recherche{
 	display: flex;
 	justify-content: flex-start;
@@ -156,22 +158,30 @@ a{
     margin-bottom: 30px;
     margin-top: 30px;
     margin-left: 30px;
+
 }
 
-
+#logo_info i{
+    color: #0065FC;
+    background-color: white;
+    border-radius: 50%;
+    border-color: #f2f2f2;
+    border: 1px solid grey;
+    padding: 3px 7px 3px 7px;
+    margin-right: 10px;
+}
 /*Hebergement*/
 #top{
     display: flex;
     justify-content: space-between;
 }
-
-
 #location{
     flex: 2;
-        
+    width: 160%;
 }
 
 #location, #populaires{
+    justify-content: space-between;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding: 40px;
@@ -181,6 +191,7 @@ a{
 #texte_hebergement{
     font-weight: bold;
     margin-bottom: -10px;
+    font-size: large;
 }
 
 #espace_hebergement{
@@ -193,14 +204,15 @@ a{
 .choix{
 	background-color: white;
 	display: grid;
-    height: 220px;
-    grid-template-rows: 65%;
+    height: 250px;
+    grid-template-rows: 55%;
     box-sizing: border-box;
     border: 5px solid #fff;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 7px #c1c1c1;
-    
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .description_hebergement{
@@ -209,7 +221,16 @@ a{
 
 .nom{
     font-weight: bolder;
-}	
+}
+
+.nom_suite{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.nom_suite span{
+    font-weight: bold;
+}
 
 .images_hebergement img{
 	width: 100%;
@@ -223,6 +244,7 @@ a{
 
 .notation{
     word-spacing: -1ch;
+    margin-top: 10%;
 }
 
 .fa-star{
@@ -246,17 +268,22 @@ a{
 
 #populaires{
     flex: 1;
-    margin-left: 3%;
+    margin-left: 30%;
+    max-width: 20%;
+
 }
 
 #tete_populaire i{
-    margin-left: 80%;
+    margin-left: 50%;
+    font-size: x-large;
 }
+
 #tete_populaire{
     font-weight: bold;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: baseline;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
+    font-size: large;
 }
 
 .choix_populaire{
@@ -268,13 +295,14 @@ a{
     box-shadow: 0 0 7px #c1c1c1;
     box-sizing: border-box;
     overflow: hidden;
-    width: 50%;
+    width: 100%;
+    height: 155px;
 
 }
 
 .images_populaire img{
-	 width: 200px;
-    height: 125px;
+	 width: 160px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -284,10 +312,12 @@ a{
     flex-direction: column;
     justify-content: space-between ;
     background-color: #fff;
-    padding: 10px;
-    margin-left: 15px;
+    padding-right: 20%;
 }
-
+.nom_suite_populaire{
+    margin-bottom: 60px;
+    margin-top: 5px;
+}
 
 /*Activitées*/
 #Activités{
