@@ -100,6 +100,7 @@ a{
 /*Filtres*/
 #filtres{
     margin-top: 10px;
+    width: 70%;
 }
 #titre_filtres{
     display: flex;
@@ -109,8 +110,8 @@ a{
 
 #liste_filtres{
 	display: flex;
-	justify-content: space-evenly;
-	width: 50%;
+	justify-content: space-between;
+	width: 70%;
 	flex-wrap: wrap;
 }
 
@@ -119,18 +120,17 @@ a{
     font-weight: bold;
 }
 
-#les_filtres{
+.les_filtres{
 	display: flex;
 	align-items: center;
     height: 46px;
     border: 2px solid #f2f2f2;
     border-left: none;
-    margin-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
 }
 
- #les_filtres:hover {
+ .les_filtres:hover {
 	cursor: pointer;
     border-color: #0065FC;
     color: #0065FC;
