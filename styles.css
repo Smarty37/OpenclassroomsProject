@@ -111,7 +111,7 @@ a{
 #liste_filtres{
 	display: flex;
 	justify-content: space-between;
-	width: 70%;
+	width: 100%;
 	flex-wrap: wrap;
 }
 
@@ -238,10 +238,6 @@ a{
 	object-fit: cover;
 }
 
-.euros{
-	text-decoration: bold;
-}
-
 .notation{
     word-spacing: -1ch;
     margin-top: 10%;
@@ -329,7 +325,7 @@ a{
     justify-content: flex-end;
     margin-bottom: 4vh;
 }
-#titre_activités{
+.titre_activités{
     margin-bottom: 2vh;
 }
 
@@ -430,4 +426,171 @@ footer a:hover{
 	font-size: x-large;
     font-weight: bold;
 
+}
+/* Mobile version */
+@media only screen and (max-width: 600px){
+
+    /* General */
+
+    #corps{
+        margin: 0;
+    }
+
+    h1 , #texte_hebergement , #tete_populaire , #titre_activités {
+        font-size: 1.4em;
+    }
+
+    /* Header - Mobile */
+
+    header{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #logo{
+        margin-left: 20px;
+    }
+
+    #inscription{
+        align-self: flex-end;
+        padding: 0;
+        margin-right: 20px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    nav{
+        order:3;
+    }
+    
+    nav a{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+        padding: inherit;
+    }
+
+    nav a:hover{
+        border-top: none;
+        border-bottom-color:#0065FC;
+    }
+
+    /* Recherche - Mobile */
+
+    #barre_recherche{
+        margin: 30px 20px;
+    }
+
+    #destination{
+        flex: 1;
+    }
+
+    #recherche{
+        margin: 35px 0 30px;
+    }
+
+    .search{
+        position: relative;
+        width: 50px;
+        border-radius: 15px;
+        left: -20px;
+    }
+
+    .search span{
+        display: none;
+    }
+    
+    /*Filtres*/
+
+    #filtres{
+                margin-bottom: 12px;
+    }
+    
+    /* Hotels - Mobile */
+    
+    #hebergements{
+            padding: 0 20px;
+            background-color: initial;
+    }
+    
+    #espace_hebergement{
+            grid-template: repeat(6, 1fr) / 1fr;
+            gap: 15px;
+    }
+
+    .choix{
+        height: 200px;
+    }
+
+    .choix img{
+        height: 116px;
+    }
+
+    .nom_suite{
+        font-size: .9rem;
+    }
+
+    /* Populaires - Mobile */
+    
+    
+
+    #populaires{
+        border-radius: 0;
+        padding: 40px 20px 30px;
+        margin-bottom: 40px;
+    }
+    
+    #tete_populaire i{
+            font-size: 1.4rem;
+    }
+
+    .choix_populaire{
+        height: 145px;
+        margin-bottom: 10px;
+    }
+
+    .nom{
+        font-size: 1rem !important;
+    }
+    
+    .decription_populaire{
+            padding: 15px 10px 10px 20px;
+    }
+
+    .nom_suite_populaire{
+        font-size: .9rem;
+    }
+
+    .fa-star{
+        font-size: .8rem !important;
+        letter-spacing: 1px;
+    }
+
+    
+    /* Activities - Mobile */
+
+    #Activités{
+        margin: 55px 20px 45px;
+    }
+
+    #Activités a{
+        
+    }
+
+    .abc{
+        grid-row-end: span 1;
+        grid-column-end: span 1;
+    }
+
+    /* Footer - Mobile */
+
+    footer{
+        flex-direction: column;
+        padding: 45px 30px;
+    }
+
+    footer #conteneur{
+        padding: 0;
+    }
 }
