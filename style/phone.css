@@ -1,0 +1,507 @@
+
+body{
+	font-family: Raleway;
+}
+@font-face{
+	font-family: "Raleway";
+	src: url("../police/Raleway-VariableFont_wght.ttf");
+}
+
+#corps{
+    margin: 0px;
+}
+
+#complements_haut{
+        font-size: medium ;
+        color: grey;
+        font-weight: bold;
+        margin-bottom: 20px;
+}
+#complements{
+	 font-size: medium ;
+        color: grey;
+        font-weight: bold;
+}
+
+h1{
+    font-size: 1.4rem;
+}
+/* barre de navigation */
+
+header{
+    margin: 0;
+    flex-direction: column;
+}
+
+nav{
+    
+	display: flex;
+	justify-content: space-between;
+}
+
+nav div{
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+nav a{
+    padding: 20px 0;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;        
+    border-bottom: 3px solid #f2f2f2;
+    padding: inherit;
+}
+
+nav div a:hover{
+    color: #0065FC;
+    border-top: none;
+    padding-top: 38px ;
+    border-bottom-color:#0065FC;
+}
+
+#logo{
+	
+    margin-left: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#inscription{
+    order: 1;
+	color: #0065FC;
+    align-self: flex-end;
+    padding: 0;
+    margin-right: 20px;
+    position: relative;
+    bottom: 30px;
+}
+
+
+/* barre de recherche */
+::placeholder{
+    color: black;
+}
+
+#barre_recherche{
+    margin: 30px 20px;
+}
+
+#recherche{
+    margin: 35px 0 30px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#marker{
+	background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.7em;
+   padding-right: 2vh;
+}
+
+#destination{
+    flex:1;
+	border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    position: relative;
+    width: 90%;
+    border-radius: 15px;
+    left: -20px;
+}
+
+.search{
+    background-color: #0065FC;
+    border: none;
+    padding-right: 2em ;
+    padding-left: 2em ;
+    border-radius:15px ;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+    flex-shrink: 0;
+    
+}
+
+.search span{
+    display: none;
+}
+
+/*Filtres*/
+#filtres{
+    margin-bottom: 12px;
+    margin-top: 10px;
+    width: 90%;
+}
+#titre_filtres {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    font-size: large;
+}
+
+#liste_filtres{
+	display: flex;
+	justify-content:space-between;
+	width: 100%;
+	flex-wrap: wrap;
+    
+}
+
+.categorie{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.les_filtres{
+	display: flex;
+	align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    padding-right: 20px;
+    border-radius: 25px;
+    margin-bottom:1vh ;
+}
+
+ .les_filtres:hover {
+	cursor: pointer;
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+.icons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+
+
+.icons i{
+    margin: auto;
+    color: #0065FC;
+}
+
+
+#petit_texte{
+	display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+#logo_info i{
+    color: #0065FC;
+    background-color: white;
+    border-radius: 50%;
+    border-color: #f2f2f2;
+    border: 1px solid grey;
+    padding: 3px 7px 3px 7px;
+    margin-right: 10px;
+}
+/*Hebergement*/
+#top{
+    width: 42vh;
+    order: 1,2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#location{
+    flex: 2;
+    order: 2;
+    width: 100%;
+    padding: 0 20px;
+    background-color: initial;
+}
+
+#location, #populaires{
+    order: 1,2;
+    flex-direction: column;
+    justify-content: space-between;
+	
+	border-radius: 20px;
+	padding: 40px;
+	
+}
+
+#texte_hebergement{
+    font-weight: bold;
+    margin-bottom: -10px;
+    font-size: 1.4rem;
+}
+
+#espace_hebergement{
+	display: grid;
+	grid-template: repeat(6, 1fr) / 1fr;
+    gap: 15px;
+    margin: 30px 0 50px;
+}
+
+.choix{
+	background-color: white;
+	display: grid;
+    height: 200px;
+    grid-template-rows: 65%;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+    width: 100%;
+    align-items: center;
+}
+
+.description_hebergement{
+    margin-left: 15px;
+}
+
+.nom{
+    font-weight: bolder;
+}
+
+.nom_suite{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.nom_suite span{
+    font-weight: bold;
+}
+
+.images_hebergement img{
+	width: 100%;
+	height: 116px;
+	object-fit: cover;
+}
+
+.notation{
+    word-spacing: -1ch;
+    margin-top: 0.9vh;
+}
+
+.fa-star{
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+.bleu{
+    color: #0065FC;
+}
+
+.grise{
+    color: #f2f2f2;
+}
+
+#afficher_plus a{
+	font-weight: bold;
+}
+
+/*Populaire*/
+
+#populaires{
+    order: 1;
+    flex: 1;
+    border-radius: 0;
+    padding: 40px 20px 30px;
+    margin-bottom: 40px;
+    margin-left: 2vh;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+#tete_populaire i{
+    font-size:1.4rem;
+    margin-left: 7vh;
+    font-size: x-large;
+}
+
+#tete_populaire{
+    font-weight: bold;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 10%;
+    font-size: 1.4rem;
+}
+
+.choix_populaire{
+    display: flex;
+    background-color: white;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 7px #c1c1c1;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    height: 145px;
+
+}
+
+.images_populaire img{
+	 width: 15vh;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 1vh;
+}
+
+.description_populaire{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between ;
+    background-color: #fff;
+    margin-left: 10px;
+    padding: 15px 10px 10px 20px;
+}
+
+.nom{
+    font-size: 1rem !important;
+}
+
+.nom_suite_populaire{
+    margin-bottom: 7vh;
+    margin-top: 1vh;
+    font-size: 0.9rem;
+}
+.nom_suite_populaire span{
+    font-weight: bold;
+}
+/*Activitées*/
+#activites{
+    width: 100%;
+    display: flex;
+    height: 60vh;
+    flex-flow:column wrap;
+    align-content: space-between;
+    flex-direction: column;
+    }
+.titre_activites{
+   margin-top: 5vh;
+   font-weight: bold;
+   font-size: 1.4rem;
+
+}
+
+.abc{
+    width: 90% ;
+    background-size: cover;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0px 1px 10px 1px #c9c9c9;
+    display: flex;
+    justify-content: center;
+    max-width: 370px;
+    overflow: hidden;
+    margin-right: 2vh;
+    }
+.vieux_port{
+    background-image:url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) ;
+    background-position: -170px 0px;
+}
+
+.blk-tall{
+    height: 42vh;
+}
+
+.pomegues{
+    background-image:url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) ;
+    background-position: 0px -100px;
+}
+
+.blk-pomegues{
+    height: 23vh;
+    margin-bottom: 4vh;
+}
+
+.frioul{
+    background-image:url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-position: 0px -100px;
+}
+
+.blk-frioul{
+    height: 15vh;
+}
+
+.calanques{
+    background-image:url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) ;
+    background-position: -170px 0px;
+}
+
+.notredame{
+    background-image:url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
+    background-position: 0px -100px;
+}
+
+.longchamps{
+    background-image:url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) ;
+    background-position: 0px -100px;
+}
+
+.description_activites{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    bottom: 0px;
+    border-radius: 0 0 1rem 1rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: bold;
+    
+}
+
+/*Footer*/
+
+#conteneur{
+	display:  flex;
+	justify-content:space-evenly;
+    flex-direction: column;
+    padding: 45px 30px;
+}
+ 
+ footer{
+ 		background-color: #F2F2F2;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+footer div{
+    padding: 0;
+}
+
+footer li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+footer a:hover{
+    font-weight: 600;
+    color: #0065FC;
+}
+.info {
+    margin-left: 40px;
+	font-size: x-large;
+    font-weight: bold;
+
+}
+.element{
+    margin-bottom: 3vh;
+}
