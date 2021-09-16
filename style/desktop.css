@@ -1,9 +1,10 @@
+
 body{
 	font-family: Raleway;
 }
 @font-face{
 	font-family: "Raleway";
-	src: url("police/Raleway-VariableFont_wght.ttf");
+	src: url("../police/Raleway-VariableFont_wght.ttf");
 }
 
 #corps{
@@ -350,7 +351,7 @@ a{
     margin-right: 2vh;
 }
 .vieux_port{
-    background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) ;
+    background-image:url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) ;
     background-position: -170px 0px;
 }
 
@@ -359,7 +360,7 @@ a{
 }
 
 .pomegues{
-    background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) ;
+    background-image:url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) ;
     background-position: 0px -100px;
 }
 
@@ -369,7 +370,7 @@ a{
 }
 
 .frioul{
-    background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-image:url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-position: 0px -100px;
 }
 
@@ -378,17 +379,17 @@ a{
 }
 
 .calanques{
-    background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) ;
+    background-image:url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) ;
     background-position: -170px 0px;
 }
 
 .notredame{
-    background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
+    background-image:url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
     background-position: 0px -100px;
 }
 
 .longchamps{
-    background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) ;
+    background-image:url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) ;
     background-position: 0px -100px;
 }
 
