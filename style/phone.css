@@ -1,6 +1,7 @@
 
 body{
 	font-family: Raleway;
+    
 }
 @font-face{
 	font-family: "Raleway";
@@ -8,7 +9,8 @@ body{
 }
 
 #corps{
-    margin: 0px;
+    width: 90vw;
+    margin: auto;
 }
 
 #complements_haut{
@@ -40,7 +42,6 @@ nav{
 }
 
 nav div{
-    padding-top: 40px;
     font-weight: bold;
 }
 
@@ -54,15 +55,22 @@ nav a{
 }
 
 nav div a:hover{
-    color: #0065FC;
-    border-top: none;
-    padding-top: 38px ;
     border-bottom-color:#0065FC;
 }
 
 #logo{
 	
     margin-left: 20px;
+}
+#heb, #act{
+    width: 100%;
+}
+#heb{
+    order: 1;
+}
+
+#act{
+    order: 2;
 }
 
 a{
@@ -71,7 +79,8 @@ a{
 }
 
 #inscription{
-    order: 1;
+    justify-content: flex-end;
+    order: 0;
 	color: #0065FC;
     align-self: flex-end;
     padding: 0;
@@ -91,7 +100,6 @@ a{
 }
 
 #recherche{
-    margin: 35px 0 30px;
 	display: flex;
 	justify-content: flex-start;
 }
@@ -104,19 +112,18 @@ a{
     justify-content: center;
     align-items: center;
     height: 2.7em;
-   padding-right: 2vh;
+   padding-right: 2vw;
 }
 
 #destination{
     flex:1;
 	border: 1px solid #f2f2f2;
     padding: 0 0 0 15px;
-    font-size: 1.1em;
-    font-weight: 600;
-    position: relative;
+    font-size: 0.9em;
+    font-weight: bold;
     width: 90%;
     border-radius: 15px;
-    left: -20px;
+    
 }
 
 .search{
@@ -218,27 +225,28 @@ a{
 }
 /*Hebergement*/
 #top{
-    width: 42vh;
-    order: 1,2;
+    width: 80vw;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
+#hebergements{
+    order: 1;
+}
+
 #location{
-    flex: 2;
-    order: 2;
     width: 100%;
     padding: 0 20px;
     background-color: initial;
 }
 
 #location, #populaires{
-    order: 1,2;
     flex-direction: column;
     justify-content: space-between;
-	
+	align-items: center;
 	border-radius: 20px;
-	padding: 40px;
+	
 }
 
 #texte_hebergement{
@@ -317,19 +325,18 @@ a{
 /*Populaire*/
 
 #populaires{
-    order: 1;
-    flex: 1;
+    order: 0;
     border-radius: 0;
     padding: 40px 20px 30px;
     margin-bottom: 40px;
-    margin-left: 2vh;
+    margin-left: 2vw;
     width: 100%;
     background-color: #f2f2f2;
 }
 
 #tete_populaire i{
     font-size:1.4rem;
-    margin-left: 7vh;
+    margin-left: 2vw;
     font-size: x-large;
 }
 
@@ -356,10 +363,10 @@ a{
 }
 
 .images_populaire img{
-	 width: 15vh;
+	 width: 30vw;
     height: 100%;
     object-fit: cover;
-    margin-right: 1vh;
+    margin-right: 1vw;
 }
 
 .description_populaire{
@@ -368,7 +375,7 @@ a{
     flex-direction: column;
     justify-content: space-between ;
     background-color: #fff;
-    margin-left: 10px;
+    margin-left: 20px;
     padding: 15px 10px 10px 20px;
 }
 
@@ -388,7 +395,6 @@ a{
 #activites{
     width: 100%;
     display: flex;
-    height: 60vh;
     flex-flow:column wrap;
     align-content: space-between;
     flex-direction: column;
@@ -410,7 +416,7 @@ a{
     justify-content: center;
     max-width: 370px;
     overflow: hidden;
-    margin-right: 2vh;
+    margin-right: 2vw;
     }
 .vieux_port{
     background-image:url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) ;

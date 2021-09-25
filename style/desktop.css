@@ -1,6 +1,7 @@
 
 body{
 	font-family: Raleway;
+    font-size: 0.9vw;
 }
 @font-face{
 	font-family: "Raleway";
@@ -8,14 +9,14 @@ body{
 }
 
 #corps{
-	margin-right: 5%;
-	margin-left: 5%;
+	width: 90vw;
+    margin: auto;
 }
 #complements_haut{
-        font-size: medium ;
+        font-size: 1rem ;
         color: grey;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 1.2rem;
 }
 #complements{
 	 font-size: medium ;
@@ -31,7 +32,7 @@ nav{
 }
 
 nav div{
-    padding-top: 40px;
+    padding-top: 3rem;
     font-weight: bold;
 }
 
@@ -46,7 +47,7 @@ nav div a:hover{
 }
 
 #logo{
-	width: 70%;
+	flex-grow: 1;
 }
 
 a{
@@ -178,7 +179,7 @@ a{
 }
 #location{
     flex: 2;
-    width: 65vh;
+    /*width: 65vh;*/
 }
 
 #location, #populaires{
@@ -205,15 +206,15 @@ a{
 .choix{
 	background-color: white;
 	display: grid;
-    height: 30vhpx;
-    grid-template-rows: 65%;
+    height:18vh;
+    grid-template-rows: 60%;
     box-sizing: border-box;
     border: 5px solid #fff;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 7px #c1c1c1;
     
-    width: 20vh;
+    /*width: 20vh;*/
 }
 
 .description_hebergement{
@@ -241,7 +242,7 @@ a{
 
 .notation{
     word-spacing: -1ch;
-    margin-top: 0.9vh;
+    margin-top: 1.5vh;
 }
 
 .fa-star{
@@ -265,13 +266,13 @@ a{
 
 #populaires{
     flex: 1;
-    margin-left: 2vh;
-    width: 10vh;
+    margin-left: 2rem;
+    /*width: 30%;*/
 
 }
 
 #tete_populaire i{
-    margin-left: 7vh;
+    margin-left: 7vw;
     font-size: x-large;
 }
 
@@ -298,10 +299,10 @@ a{
 }
 
 .images_populaire img{
-	 width: 8vh;
+	 width: 14vw;
     height: 100%;
     object-fit: cover;
-    margin-right: 1vh;
+    margin-right: 1rem;
 }
 
 .description_populaire{
@@ -323,18 +324,15 @@ a{
 #activites{
     width: 100%;
     display: flex;
-    height: 60vh;
+    height: 48vh;
     flex-flow:column wrap;
     align-content: space-between;
-    justify-content: flex-end;
-    margin-bottom: 4vh;
-    margin-top: -15vh;
-
 }
 .titre_activites{
-   margin-top: 5vh;
+   margin-top:5rem;
+   margin-bottom: 1rem;
    font-weight: bold;
-   font-size: x-large;
+   font-size: 1.5rem;
 
 }
 
