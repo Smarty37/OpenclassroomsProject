@@ -36,9 +36,10 @@ header{
 }
 
 nav{
-    
+    width: 100%;
 	display: flex;
 	justify-content: space-between;
+    flex-flow: column wrap;
 }
 
 nav div{
@@ -58,19 +59,19 @@ nav div a:hover{
     border-bottom-color:#0065FC;
 }
 
-#logo{
-	
-    margin-left: 20px;
-}
 #heb, #act{
-    width: 100%;
+    justify-content: space-between;
+    flex-flow: row;
+    align-items: center;
 }
 #heb{
     order: 1;
+    width: 50%;
 }
 
 #act{
     order: 2;
+    width: 50%;
 }
 
 a{
@@ -87,6 +88,7 @@ a{
     margin-right: 20px;
     position: relative;
     bottom: 30px;
+    flex-grow: 1;
 }
 
 
@@ -112,7 +114,8 @@ a{
     justify-content: center;
     align-items: center;
     height: 2.7em;
-   padding-right: 2vw;
+    padding-right: 3vw;
+    margin-right: -1rem;
 }
 
 #destination{
@@ -122,22 +125,22 @@ a{
     font-size: 0.9em;
     font-weight: bold;
     width: 90%;
-    border-radius: 15px;
+    
     
 }
 
 .search{
     background-color: #0065FC;
     border: none;
-    padding-right: 2em ;
-    padding-left: 2em ;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-radius:15px ;
     color: #fff;
     font-weight: 600;
     font-size: 1.1em;
     cursor: pointer;
     flex-shrink: 0;
-    
+    margin-left:-2rem;
 }
 
 .search span{
@@ -336,7 +339,7 @@ a{
 
 #tete_populaire i{
     font-size:1.4rem;
-    margin-left: 2vw;
+    margin-left: 16vw;
     font-size: x-large;
 }
 
@@ -363,7 +366,7 @@ a{
 }
 
 .images_populaire img{
-	 width: 30vw;
+	 width: 31vw;
     height: 100%;
     object-fit: cover;
     margin-right: 1vw;
@@ -384,7 +387,7 @@ a{
 }
 
 .nom_suite_populaire{
-    margin-bottom: 7vh;
+    margin-bottom: 5vh;
     margin-top: 1vh;
     font-size: 0.9rem;
 }
@@ -395,7 +398,7 @@ a{
 #activites{
     width: 100%;
     display: flex;
-    flex-flow:column wrap;
+    
     align-content: space-between;
     flex-direction: column;
     }
@@ -403,7 +406,7 @@ a{
    margin-top: 5vh;
    font-weight: bold;
    font-size: 1.4rem;
-
+   margin-bottom: 2rem;
 }
 
 .abc{
@@ -424,7 +427,9 @@ a{
 }
 
 .blk-tall{
-    height: 42vh;
+    height: 23vh;
+    margin-bottom: 2rem;
+    
 }
 
 .pomegues{
@@ -434,7 +439,7 @@ a{
 
 .blk-pomegues{
     height: 23vh;
-    margin-bottom: 4vh;
+    margin-bottom:2rem;
 }
 
 .frioul{
@@ -443,7 +448,8 @@ a{
 }
 
 .blk-frioul{
-    height: 15vh;
+    height: 23vh;
+    margin-bottom: 2rem;
 }
 
 .calanques{
@@ -485,8 +491,6 @@ a{
  
  footer{
  		background-color: #F2F2F2;
-        padding-top: 10px;
-        padding-bottom: 10px;
 }
 
 footer div{
