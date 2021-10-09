@@ -40,6 +40,7 @@ nav{
 	display: flex;
 	justify-content: space-between;
     flex-flow: column wrap;
+    height: 11vh;
 }
 
 nav div{
@@ -59,18 +60,18 @@ nav div a:hover{
     border-bottom-color:#0065FC;
 }
 
-#heb, #act{
+/*#heb, #act{
     justify-content: space-between;
     flex-flow: row;
     align-items: center;
-}
+}*/
 #heb{
     order: 1;
     width: 50%;
 }
 
 #act{
-    order: 2;
+    order: 3;
     width: 50%;
 }
 
@@ -81,14 +82,9 @@ a{
 
 #inscription{
     justify-content: flex-end;
-    order: 0;
+    order: 2;
 	color: #0065FC;
-    align-self: flex-end;
     padding: 0;
-    margin-right: 20px;
-    position: relative;
-    bottom: 30px;
-    flex-grow: 1;
 }
 
 
@@ -423,7 +419,7 @@ a{
     }
 .vieux_port{
     background-image:url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) ;
-    background-position: -170px 0px;
+    background-position: 0px -50px;
 }
 
 .blk-tall{
@@ -434,7 +430,7 @@ a{
 
 .pomegues{
     background-image:url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) ;
-    background-position: 0px -100px;
+    background-position: -600px -650px;
 }
 
 .blk-pomegues{
@@ -444,7 +440,7 @@ a{
 
 .frioul{
     background-image:url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    background-position: 0px -100px;
+    background-position: 0px -20px;
 }
 
 .blk-frioul{
@@ -454,17 +450,17 @@ a{
 
 .calanques{
     background-image:url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) ;
-    background-position: -170px 0px;
+    background-position: 0px -100px;
 }
 
 .notredame{
     background-image:url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
-    background-position: 0px -100px;
+    background-position: -100px 0px;
 }
 
 .longchamps{
     background-image:url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) ;
-    background-position: 0px -100px;
+    background-position: 0px -50px;
 }
 
 .description_activites{
