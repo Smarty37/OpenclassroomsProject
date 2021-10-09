@@ -69,6 +69,10 @@ a{
 	justify-content: flex-start;
 }
 
+.search i{
+    display: none;
+}
+
 #marker{
 	background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
@@ -206,7 +210,7 @@ a{
 .choix{
 	background-color: white;
 	display: grid;
-    height:18vh;
+    height:14rem;
     grid-template-rows: 60%;
     box-sizing: border-box;
     border: 5px solid #fff;
@@ -236,7 +240,7 @@ a{
 
 .images_hebergement img{
 	width: 100%;
-	height: 126px;
+	height: 7.5rem;
 	object-fit: cover;
 }
 
