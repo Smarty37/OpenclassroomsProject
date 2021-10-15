@@ -85,6 +85,7 @@ a{
     order: 2;
 	color: #0065FC;
     padding: 0;
+    border-bottom: none;
 }
 
 
@@ -177,7 +178,7 @@ a{
     height: 46px;
     border: 2px solid #f2f2f2;
     border-left: none;
-    padding-right: 20px;
+    padding-right: 10px;
     border-radius: 25px;
     margin-bottom:1vh ;
 }
@@ -281,6 +282,7 @@ a{
 
 .nom{
     font-weight: bolder;
+    
 }
 
 .nom_suite{
@@ -302,6 +304,7 @@ a{
 .notation{
     word-spacing: -1ch;
     margin-top: 0.9vh;
+    
 }
 
 .fa-star{
@@ -319,6 +322,7 @@ a{
 
 #afficher_plus a{
 	font-weight: bold;
+    margin-left: -1rem;
 }
 
 /*Populaire*/
@@ -378,14 +382,22 @@ a{
     padding: 15px 10px 10px 20px;
 }
 
-.nom{
-    font-size: 1rem !important;
+.nom_pop{
+    font-size: 1rem ;
+    margin-left: 0.5rem;
+    font-weight: bold;
 }
 
 .nom_suite_populaire{
     margin-bottom: 5vh;
     margin-top: 1vh;
     font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+.notation_pop{
+    word-spacing: -1ch;
+    margin-top: 0.9vh;
+    margin-left: 0.5rem;
 }
 .nom_suite_populaire span{
     font-weight: bold;
@@ -471,7 +483,7 @@ a{
     border-radius: 0 0 1rem 1rem;
     padding-left: 2rem;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1rem;
     font-weight: bold;
     
 }
