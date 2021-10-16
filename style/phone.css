@@ -60,11 +60,6 @@ nav div a:hover{
     border-bottom-color:#0065FC;
 }
 
-/*#heb, #act{
-    justify-content: space-between;
-    flex-flow: row;
-    align-items: center;
-}*/
 #heb{
     order: 1;
     width: 50%;
@@ -86,6 +81,8 @@ a{
 	color: #0065FC;
     padding: 0;
     border-bottom: none;
+    font-weight: bold;
+    padding-top: 1rem;
 }
 
 
