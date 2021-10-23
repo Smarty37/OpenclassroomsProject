@@ -56,7 +56,8 @@ nav a{
     padding: inherit;
 }
 
-nav div a:hover{
+nav  a:hover{
+    color: #0065FC;
     border-bottom-color:#0065FC;
 }
 
@@ -439,7 +440,7 @@ a{
 
 .pomegues{
     background-image:url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) ;
-    background-position: -600px -650px;
+    background-position: -608px -650px;
 }
 
 .blk-pomegues{
@@ -459,12 +460,12 @@ a{
 
 .calanques{
     background-image:url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) ;
-    background-position: 0px -100px;
+    background-position: 0px -95px;
 }
 
 .notredame{
     background-image:url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
-    background-position: -100px 0px;
+    background-position: 0px 0px;
 }
 
 .longchamps{
