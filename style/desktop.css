@@ -277,16 +277,17 @@ a{
 
 #tete_populaire i{
     justify-content: flex-end;
-    align-items: flex-end;
     font-size: x-large;
+    
 }
 
 #tete_populaire{
     font-weight: bold;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 10%;
     font-size: large;
+    display: flex;
+    height: 4vh;
 }
 
 .choix_populaire{
@@ -299,12 +300,12 @@ a{
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
-    height: 140px;
+    height: 12vh;
 
 }
 
 .images_populaire img{
-	 width: 12vw;
+	 width: 10vw;
     height: 100%;
     object-fit: cover;
     margin-right: 1rem;
@@ -316,7 +317,7 @@ a{
     flex-direction: column;
     justify-content: space-between ;
     background-color: #fff;
-    margin-left: 10px;
+    margin-left: 1rem ;
 }
 .nom_pop{
     font-size: medium;
@@ -348,7 +349,7 @@ a{
 
 .abc{
     width: 19vw ;
-    max-width: 370px;
+    max-width: 19vw;
     background-size: cover;
     border-radius: 1rem;
     position: relative;
@@ -373,7 +374,7 @@ a{
 }
 
 .blk-pomegues{
-    height: 23vh;
+    height: 21vh;
     margin-bottom: 4vh;
 }
 
@@ -383,24 +384,36 @@ a{
 }
 
 .blk-frioul{
-    height: 15vh;
+    height: 17vh;
 }
 
 .calanques{
     background-image:url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) ;
-    background-position: -200px 0px;
+    background-position: -230px 0px;
+}
+
+.blk-tal{
+    height: 42vh;
 }
 
 .notredame{
     background-image:url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
-    background-position: -100px 0px;
+    background-position: -45px 0px;
+}
+
+.blk-pomegue{
+    height: 17vh;
+    margin-bottom: 4vh;
 }
 
 .longchamps{
     background-image:url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) ;
-    background-position: 0px -50px;
+    background-position: -30px 0px;
 }
 
+.blk-friou{
+    height: 21vh;
+}
 .description_activites{
     position: absolute;
     width: 100%;
@@ -423,8 +436,8 @@ a{
  
  footer{
  		background-color: #F2F2F2;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
 }
 
 footer li{
@@ -441,32 +454,36 @@ footer a:hover{
 
 }
 
-@media screen and (min-width: 768px),(max-width:1023px){
-    .choix{
-
-        background-color: white;
-        display: grid;
-        height:14rem;
-        grid-template-rows: 60%;
-        box-sizing: border-box;
-        border: 5px solid #fff;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 0 7px #c1c1c1;
-        width:17vw;
+@media screen and (min-width: 768px) and (max-width:1023px){
+    body{
+        font-family: Raleway;
+        font-size: 1.5vw;
+    }
+    
+    #filtres{
+        width: 100%;
+    }
+   
+   
+    .choix{ 
+        height: 20vh;
+        grid-template-rows: 58%;
+        width:25vw;
     }
    
     #top{
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #hebergement{
         order:0;
     }
     #populaires{
-        max-width: 50%;
+        max-width: none;
+        margin-left: 0rem;
         order:1;
+        margin-bottom: 1rem;
     }
     .choix_populaire{
         display: flex;
@@ -481,4 +498,27 @@ footer a:hover{
         height: 140px;
     
     }
+    .images_populaire img{
+        width: 24vw;
+    }
+    .vieux_port{
+        background-position: -110px 0px;
+    }
+    .pomegues{
+        background-position: 0px -40px;
+    }
+    .frioul{
+        background-position: -80px -20px;
+    }
+    .calanques{
+        background-position: -316px 0px;
+    }
+    .notredame{
+        background-position: -95px 0px;
+    }
+    
+     .longchamps{
+        background-position: -94px -45px;
+    }
+    
 }

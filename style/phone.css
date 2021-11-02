@@ -463,9 +463,19 @@ a{
     background-position: 0px -95px;
 }
 
+.blk-tal{
+    height: 23vh;
+    margin-bottom: 2rem;
+}
+
 .notredame{
     background-image:url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
     background-position: 0px 0px;
+}
+
+.blk-pomegue{
+    height: 23vh;
+    margin-bottom: 2rem;
 }
 
 .longchamps{
@@ -473,6 +483,10 @@ a{
     background-position: 0px -50px;
 }
 
+.blk-friou{
+    height: 23vh;
+    margin-bottom: 2rem;
+}
 .description_activites{
     position: absolute;
     width: 100%;
@@ -512,7 +526,7 @@ footer a:hover{
     color: #0065FC;
 }
 .info {
-    margin-left: 40px;
+
 	font-size: x-large;
     font-weight: bold;
 
